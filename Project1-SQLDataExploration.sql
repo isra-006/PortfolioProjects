@@ -74,6 +74,7 @@ SELECT *, (RollingPeopleVaccinated/population)*100
 FROM PopulationVaccinated
 
 --Using temp tables
+DROP TABLE IF EXISTS #PercentPopulationVaccinated
 CREATE TABLE #PercentPopulationVaccinated
 ( continent nvarchar(255),
   location nvarchar(255),
